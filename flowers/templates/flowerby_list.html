@@ -1,0 +1,9 @@
+{% load flower_tags %}
+<h2>Flower Types</h2>
+<ul>
+    {% get_flower_types as flower_types %}
+    {% for flower_type in flower_types %}
+    <li><a href="/type/{{ flower_type.id }}/">{{ flower_type.name }}</a></li>
+    {% endfor %}
+</ul>
+

@@ -1,0 +1,8 @@
+{% extends 'flowers/base.html' %}
+{% block content %}
+<h2>{{ flower.name }}</h2>
+<p>Type: {{ flower.type }}</p>
+<p>Color: {{ flower.color }}</p>
+<p>Price: ${{ flower.price }}</p>
+<p>{{ flower.description }}</p>
+{% endblock %}

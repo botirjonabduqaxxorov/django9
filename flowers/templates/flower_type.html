@@ -1,0 +1,10 @@
+{% extends 'flowers/base.html' %}
+{% block content %}
+<h2>{{ flower_type.name }}</h2>
+<p>{{ flower_type.description }}</p>
+<ul>
+    {% for flower in flowers %}
+    <li><a href="/{{ flower.id }}/">{{ flower.name }}</a></li>
+    {% endfor %}
+</ul>
+{% endblock %}
